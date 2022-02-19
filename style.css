@@ -1,0 +1,125 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 20px;
+    max-height: 600px;
+    width: 350px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px;
+}
+
+.img-container {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.card img {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+.overlay {
+    position: absolute;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    inset: 0;
+    background: cyan;
+    opacity: 0;
+    transition: opacity 300ms ease-in;   
+}
+
+.overlay svg {
+    position: absolute;
+    margin: auto;
+    inset: 0;
+}
+
+.overlay:hover {
+    opacity: 0.7;
+}
+
+.card img:hover {
+    color: red;
+}
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0;
+}
+
+h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.price-cntdwn {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price p {
+    color: hsl(178, 100%, 50%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+
+}
+
+.line {
+    height: 1px;
+    width : 100%;
+    background: hsl(215, 51%, 70%);
+}
+
+.card-footer {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.card-footer a {
+    text-decoration: none;
+    color:  hsl(215, 51%, 70%);
+    
+}
+.card-footer a:visited {
+    color: hsl(215, 51%, 70%);
+}
+.card-footer a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.card-footer img {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+}
